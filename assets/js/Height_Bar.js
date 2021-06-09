@@ -36,15 +36,6 @@ d3.csv("data.csv", function(data) {
       .range([height, 0]);
   var yAxis = svg2.append("g")
 
-  // Y axis label:
-  svg2.append("text")
-  .attr("text-anchor", "end")
-  .attr("transform", "rotate(-90)")
-  .attr("y", margin.left + -150)
-  .attr("x", margin.top + -200)
-  .text("Hero Height (in)")
-  .style("font-size","14pt");
-
 
 
   // A function that builds the graph for a specific value of bin
@@ -82,7 +73,15 @@ d3.csv("data.csv", function(data) {
           .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
           .attr("height", function(d) { return height - y(d.length); })
           .style("fill", "#69b3a2")
-
+          
+  // Y axis label:
+  svg2.append("text")
+  .attr("text-anchor", "end")
+  .attr("transform", "rotate(-90)")
+  .attr("y", margin.left + -150)
+  .attr("x", margin.top + -200)
+  .text("Hero Height (in)")
+  .style("font-size","14pt");
 
     // If less bar in the new histogram, I delete the ones not in use anymore
     u

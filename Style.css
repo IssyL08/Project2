@@ -37,6 +37,17 @@
       background-color: rgb(253, 253, 253);
 }
 
+p{
+      font-size: 15pt;
+      color: rgb(233, 30, 30);
+      margin-top: 14px;
+      margin-bottom: 0rem;
+
+}
+
+.nav-item {
+      margin-right: 2rem;
+  }
 
 .navbar a:hover {
       background-color: rgb(168, 108, 106);
@@ -57,6 +68,19 @@
             padding-bottom: 5%;
             padding-top: 5%;
             }
+
+
+.navbar-nav {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 20x;
+            margin-bottom: 0;
+            list-style: none;
+              }
+
+
 .opa
 {
       color: rgb(14, 13, 13);
@@ -176,6 +200,16 @@
       font-size: 38px;
       line-height: 1.16;
       letter-spacing: -.7px;
+      text-align: center;
+      margin-left: 50px;
+}
+
+h1{
+      font-size: 38px;
+      line-height: 1.16;
+      letter-spacing: -.7px;
+      text-align: center;
+      margin-left: 50px;
 }
 .h2{
       font-size: 38px;

@@ -25,6 +25,18 @@ text-align: center;
 background-color: rgb(253, 253, 253);
 }
 
+p{
+      font-size: 15pt;
+      color: rgb(233, 30, 30);
+      margin-top: 14px;
+      margin-bottom: 0rem;
+
+}
+
+.nav-item {
+      margin-right: 2rem;
+  }
+
 
 .navbar a:hover {
 background-color: rgb(168, 108, 106);
@@ -45,6 +57,12 @@ color: rgb(243, 236, 236);
       padding-bottom: 5%;
       padding-top: 5%;
       }
+
+.nav-item {
+      margin-right: 1rem;
+        }
+
+
 .opa
 {
 color: rgb(14, 13, 13);

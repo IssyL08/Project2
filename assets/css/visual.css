@@ -33,6 +33,17 @@ p{
 
 }
 
+.logo
+{
+background-image: url('https://image.freepik.com/free-vector/abstract-circle-light-red-frame-vector-background_7233-348.jpg');
+background-size: cover;
+width: auto; 
+height: 150px;
+border-radius: 150px;
+border-color: red;
+opacity: 80px;
+}
+
 .nav-item {
       margin-right: 2rem;
   }

@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-  var margin = {top: 10, right: 100, bottom: 30, left: 50},
-      width = 660- margin.left - margin.right,
-      height = 600 - margin.top - margin.bottom;
+  var margin = {top: 10, right: 100, bottom: 50, left: 100},
+      width = 800- margin.left - margin.right,
+      height = 660 - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
   var svg = d3.select("#area1")
@@ -29,6 +29,27 @@
       .range([ height, 0]);
     svg.append("g")
       .call(d3.axisLeft(y));
+
+      // Add X axis label:
+    svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width + -margin.left + -200)
+    .attr("y", height + margin.top + 40)
+    .text("Hero Weight (lbs)")
+    .style("font-size","14pt");
+
+// Y axis label:
+    svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("transform", "rotate(-90)")
+    .attr("y", margin.left + -150)
+    .attr("x", margin.top + -200)
+    .text("Hero Height (in)")
+    .style("font-size","14pt");
+
+
+
+
   
     // Add a scale for bubble size
     var z = d3.scaleLinear()

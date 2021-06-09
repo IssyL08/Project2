@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 40},
-    width = 660- margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var margin = {top: 10, right: 50, bottom: 100, left: 100},
+    width = 800- margin.left - margin.right,
+    height = 660 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg2 = d3.select("#area2")
@@ -23,10 +23,29 @@ d3.csv("data.csv", function(data) {
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
+          // Add X axis label:
+    svg2.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width + -margin.left + -200)
+    .attr("y", height + margin.top + 40)
+    .text("Number of Heros Weight")
+    .style("font-size","14pt");
+
   // Y axis: initialization
   var y = d3.scaleLinear()
       .range([height, 0]);
   var yAxis = svg2.append("g")
+
+  // Y axis label:
+  svg2.append("text")
+  .attr("text-anchor", "end")
+  .attr("transform", "rotate(-90)")
+  .attr("y", margin.left + -150)
+  .attr("x", margin.top + -200)
+  .text("Hero Height (in)")
+  .style("font-size","14pt");
+
+
 
   // A function that builds the graph for a specific value of bin
   function update(nBin) {
@@ -80,6 +99,10 @@ d3.csv("data.csv", function(data) {
   // Listen to the button -> update if user change it
   d3.select("#nBin").on("input", function() {
     update(+this.value);
+
+
+
+
   });
 
 });

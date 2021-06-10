@@ -32,3 +32,4 @@ The data supporting these pages was pulled and scraped from sources including:
   3. uszipcode (https://pypi.org/project/uszipcode/)
   4. Charts.js (https://www.chartjs.org/)
   5. Leaflet.js (https://leafletjs.com/)
+  6. Marvel API found at https://developer.marvel.com/

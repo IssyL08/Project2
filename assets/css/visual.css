@@ -183,6 +183,8 @@ svg{
      
   }
 #myChart{ background-color: rgb(213, 220, 223);
+      height:500px;
+      width: 930px;
 
 }
 

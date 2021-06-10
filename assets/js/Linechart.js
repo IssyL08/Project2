@@ -1,3 +1,5 @@
+// Line Chart created through Chart.js:
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -20,6 +22,21 @@ var myChart = new Chart(ctx, {
     },
     options: {
       scales: {
+
+        y:{
+          display: true,
+          title:{
+            display: true,
+            text: 'Height (in) and Weight (lbs)',
+            color: '#911',
+            font:{
+              faily: 'Times',
+              size: 20,
+              style: 'normal',
+              lineHeight: 1.2
+            },
+          }
+        },
         x:[{
           ticks:{
             font:{
